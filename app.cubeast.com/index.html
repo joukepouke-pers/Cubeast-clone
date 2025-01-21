@@ -1,0 +1,255 @@
+<!DOCTYPE html><html lang="en">
+<!-- Mirrored from app.cubeast.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Jan 2025 17:41:26 GMT -->
+<head><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <title>Cubeast</title>
+  <base >
+
+  <meta charset="utf-8">
+  <meta name="description" content="By leveraging the Bluetooth connectivity of modern cubes Cubeast aims to provide a new set of insights and tools to help you become a better cuber. It records, stores and analyzes all of your solves.">
+  <meta name="keywords" content="Rubik's Cube, Speedcubing, Cubing, Bluetooth">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <link href="assets/icons/meteocons/style.css" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/icons/meteocons/style.css"></noscript>
+  <link href="assets/icons/material-icons/outline/style.css" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/icons/material-icons/outline/style.css"></noscript>
+  <style type="text/css">@font-face{font-family:'Muli';font-style:normal;font-weight:300;src:url(https://fonts.gstatic.com/s/muli/v29/7Auwp_0qiz-afT3GLQjUwkQ1OQ.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Muli';font-style:normal;font-weight:300;src:url(https://fonts.gstatic.com/s/muli/v29/7Auwp_0qiz-afTzGLQjUwkQ1OQ.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Muli';font-style:normal;font-weight:300;src:url(https://fonts.gstatic.com/s/muli/v29/7Auwp_0qiz-afTLGLQjUwkQ.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Muli';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/muli/v29/7Auwp_0qiz-afT3GLQjUwkQ1OQ.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Muli';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/muli/v29/7Auwp_0qiz-afTzGLQjUwkQ1OQ.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Muli';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/muli/v29/7Auwp_0qiz-afTLGLQjUwkQ.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Muli';font-style:normal;font-weight:600;src:url(https://fonts.gstatic.com/s/muli/v29/7Auwp_0qiz-afT3GLQjUwkQ1OQ.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Muli';font-style:normal;font-weight:600;src:url(https://fonts.gstatic.com/s/muli/v29/7Auwp_0qiz-afTzGLQjUwkQ1OQ.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Muli';font-style:normal;font-weight:600;src:url(https://fonts.gstatic.com/s/muli/v29/7Auwp_0qiz-afTLGLQjUwkQ.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Muli';font-style:normal;font-weight:700;src:url(https://fonts.gstatic.com/s/muli/v29/7Auwp_0qiz-afT3GLQjUwkQ1OQ.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Muli';font-style:normal;font-weight:700;src:url(https://fonts.gstatic.com/s/muli/v29/7Auwp_0qiz-afTzGLQjUwkQ1OQ.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Muli';font-style:normal;font-weight:700;src:url(https://fonts.gstatic.com/s/muli/v29/7Auwp_0qiz-afTLGLQjUwkQ.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}</style>
+  <link rel="manifest" href="manifest.webmanifest" crossorigin="use-credentials">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch.png">
+  <meta name="theme-color" content="#3C4252">
+
+  <!-- FUSE Splash Screen CSS -->
+  <style type="text/css">
+    #fuse-splash-screen {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #2D323D;
+      z-index: 99999;
+    }
+
+    #fuse-splash-screen .center {
+      display: block;
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    #fuse-splash-screen .logo {
+      width: 128px;
+      margin: 0 auto;
+    }
+
+    #fuse-splash-screen .status-page {
+      text-align: center;
+      font-size: 16px;
+    }
+
+    #fuse-splash-screen .status-page.hidden {
+      visibility: hidden;
+    }
+
+    #fuse-splash-screen .logo img {
+      filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.2))
+    }
+
+    #fuse-splash-screen .spinner-wrapper {
+      display: block;
+      position: relative;
+      width: 100%;
+      min-height: 100px;
+      height: 100px;
+    }
+
+    #fuse-splash-screen .spinner-wrapper .spinner {
+      position: absolute;
+      overflow: hidden;
+      left: 50%;
+      margin-left: -50px;
+      animation: outer-rotate 2.91667s linear infinite;
+    }
+
+    #fuse-splash-screen .spinner-wrapper .spinner .inner {
+      width: 100px;
+      height: 100px;
+      position: relative;
+      animation: sporadic-rotate 5.25s cubic-bezier(0.35, 0, 0.25, 1) infinite;
+    }
+
+    #fuse-splash-screen .spinner-wrapper .spinner .inner .gap {
+      position: absolute;
+      left: 49px;
+      right: 49px;
+      top: 0;
+      bottom: 0;
+      border-top: 10px solid;
+      box-sizing: border-box;
+    }
+
+    #fuse-splash-screen .spinner-wrapper .spinner .inner .left,
+    #fuse-splash-screen .spinner-wrapper .spinner .inner .right {
+      position: absolute;
+      top: 0;
+      height: 100px;
+      width: 50px;
+      overflow: hidden;
+    }
+
+    #fuse-splash-screen .spinner-wrapper .spinner .inner .left .half-circle,
+    #fuse-splash-screen .spinner-wrapper .spinner .inner .right .half-circle {
+      position: absolute;
+      top: 0;
+      width: 100px;
+      height: 100px;
+      box-sizing: border-box;
+      border: 10px solid #4285F4;
+      border-bottom-color: transparent;
+      border-radius: 50%;
+    }
+
+    #fuse-splash-screen .spinner-wrapper .spinner .inner .left {
+      left: 0;
+    }
+
+    #fuse-splash-screen .spinner-wrapper .spinner .inner .left .half-circle {
+      left: 0;
+      border-right-color: transparent;
+      animation: left-wobble 1.3125s cubic-bezier(0.35, 0, 0.25, 1) infinite;
+      -webkit-animation: left-wobble 1.3125s cubic-bezier(0.35, 0, 0.25, 1) infinite;
+    }
+
+    #fuse-splash-screen .spinner-wrapper .spinner .inner .right {
+      right: 0;
+    }
+
+    #fuse-splash-screen .spinner-wrapper .spinner .inner .right .half-circle {
+      right: 0;
+      border-left-color: transparent;
+      animation: right-wobble 1.3125s cubic-bezier(0.35, 0, 0.25, 1) infinite;
+      -webkit-animation: right-wobble 1.3125s cubic-bezier(0.35, 0, 0.25, 1) infinite;
+    }
+
+    @keyframes outer-rotate {
+      0% {
+        transform: rotate(0deg) scale(0.5);
+      }
+
+      100% {
+        transform: rotate(360deg) scale(0.5);
+      }
+    }
+
+    @keyframes left-wobble {
+
+      0%,
+      100% {
+        transform: rotate(130deg);
+      }
+
+      50% {
+        transform: rotate(-5deg);
+      }
+    }
+
+    @keyframes right-wobble {
+
+      0%,
+      100% {
+        transform: rotate(-130deg);
+      }
+
+      50% {
+        transform: rotate(5deg);
+      }
+    }
+
+    @keyframes sporadic-rotate {
+      12.5% {
+        transform: rotate(135deg);
+      }
+
+      25% {
+        transform: rotate(270deg);
+      }
+
+      37.5% {
+        transform: rotate(405deg);
+      }
+
+      50% {
+        transform: rotate(540deg);
+      }
+
+      62.5% {
+        transform: rotate(675deg);
+      }
+
+      75% {
+        transform: rotate(810deg);
+      }
+
+      87.5% {
+        transform: rotate(945deg);
+      }
+
+      100% {
+        transform: rotate(1080deg);
+      }
+    }
+  </style>
+  <!-- / FUSE Splash Screen CSS -->
+<style>@charset "UTF-8";html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent;-webkit-text-decoration-skip:objects}img{border-style:none}body:not(.is-mobile) ::-webkit-scrollbar{width:12px;height:12px;background-color:#0000}body:not(.is-mobile) ::-webkit-scrollbar:hover{background-color:#0000001f}body:not(.is-mobile) ::-webkit-scrollbar-thumb{border:2px solid transparent;box-shadow:inset 0 0 0 12px #0000005e;border-radius:12px}body:not(.is-mobile) ::-webkit-scrollbar-thumb:active{box-shadow:inset 0 0 0 12px #0000008a;border-radius:12px}html,body{display:flex;flex:1 0 auto;width:100%;height:100%;max-height:100%;min-height:100%;margin:0;padding:0;overflow:hidden}*{text-rendering:optimizeLegibility;-o-text-rendering:optimizeLegibility;-ms-text-rendering:optimizeLegibility;-moz-text-rendering:optimizeLegibility;-webkit-text-rendering:optimizeLegibility;-webkit-tap-highlight-color:transparent;box-sizing:border-box}*:before,*:after{box-sizing:border-box}*:focus{outline:none}img{max-width:100%;height:auto;vertical-align:top;border:none}html{font-size:62.5%;font-family:Muli,Helvetica Neue,Arial,sans-serif;line-height:1.4!important;letter-spacing:-.1px!important}body{font-size:14px}html,body{-webkit-font-smoothing:auto;-moz-osx-font-smoothing:auto}a{text-decoration:none}a:not(.mat-button):not(.mat-raised-button):not(.mat-flat-button):not(.mat-stroked-button):not(.mat-icon-button):not(.mat-fab):not(.mat-mini-fab):hover,a:not(.mat-button):not(.mat-raised-button):not(.mat-flat-button):not(.mat-stroked-button):not(.mat-icon-button):not(.mat-fab):not(.mat-mini-fab):active{text-decoration:underline}@media print{html,body{height:auto!important;overflow:visible!important;overflow:initial!important}}a{cursor:pointer}.hidden{display:none!important}</style><link rel="stylesheet" href="styles.967a7ce87c5993c9.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.967a7ce87c5993c9.css"></noscript></head>
+
+<body>
+
+  <!-- FUSE Splash Screen -->
+  <fuse-splash-screen id="fuse-splash-screen">
+
+    <div class="center">
+
+      <div class="logo">
+        <img width="128" src="assets/logo.png">
+      </div>
+
+      <!-- Material Design Spinner -->
+      <div class="spinner-wrapper">
+        <div class="spinner">
+          <div class="inner">
+            <div class="gap"></div>
+            <div class="left">
+              <div class="half-circle"></div>
+            </div>
+            <div class="right">
+              <div class="half-circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- / Material Design Spinner -->
+
+      <div class="status-page hidden" id="status-page">
+        Cubeast is not loading?<br>
+        Check our <a target="_blank" href="https://cubeast.statuspage.io/">status page</a> for possible issues
+      </div>
+
+    </div>
+
+  </fuse-splash-screen>
+  <!-- / FUSE Splash Screen -->
+
+  <app-root></app-root>
+
+  <!-- this line is removed on production -->
+
+  <script src="../cdn.paddle.com/paddle/paddle.js"></script>
+
+  <noscript>Please enable JavaScript to continue using this application.</noscript>
+<script src="runtime.9a83b9bd04b32abe.js" type="module"></script><script src="polyfills.b4b7d4db00a6c429.js" type="module"></script><script src="main.ce80c2bad0d3985b.js" type="module"></script>
+
+
+</body>
+<!-- Mirrored from app.cubeast.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Jan 2025 17:41:34 GMT -->
+</html>
